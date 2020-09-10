@@ -11,7 +11,7 @@ body {
 }
 
 .l-header {
-  box-sizing: border-box; 
+  box-sizing: border-box;
   padding: 20px;
   background-color: blue;
 }
@@ -36,28 +36,28 @@ nav ul {
 }
 
 nav ul li {
-  box-sizing: border-box; 
+  box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 1em;
   padding: 10px;
   margin: 10px;
-  text-align: center; 
+  text-align: center;
 }
 
 nav a {
   text-decoration: none;
-  color: rgb(12, 12, 151); 
+  color: rgb(12, 12, 151);
   padding: 10px 0px;
 }
 
 nav a:hover {
-  color: black; 
+  color: black;
 }
 
 .sous {
-  box-sizing: border-box; 
-  text-align: center; 
+  box-sizing: border-box;
+  text-align: center;
   display: none;
   background-color: white;
   position: absolute;
@@ -76,7 +76,7 @@ nav > ul li:hover .sous {
 
 .l-left-aside {
   box-sizing: border-box;
-  width: 20%;
+  width: 25%;
   padding: 20px;
 
   background-color: orange;
@@ -84,36 +84,68 @@ nav > ul li:hover .sous {
 
 .l-main {
   box-sizing: border-box;
-  width: 60%;
+  width: 50%;
   padding: 20px;
 
   background-color: white;
 
-  font-family: Arial, Helvetica, sans-serif; 
-  color: black; 
-  text-align: justify; 
-  font-size: 1em; 
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  text-align: justify;
+  font-size: 1em;
+  line-height: 1.5em;
 }
 
 .l-right-aside {
   box-sizing: border-box;
-  width: 20%;
+  width: 25%;
   padding: 20px;
-
   background-color: cyan;
 }
 
 .l-footer {
   box-sizing: border-box;
-  padding: 20px;
+  padding: 25px;
   background-color: yellow;
 }
 
+/* Image fix */
+.image {
+  display: inline-flex;
+  overflow: hidden;
+  max-width: 100%;
+  max-height: 100%;
+  user-select: none;
+}
+
+.image > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Logo */
+#logo {
+  display: flex;
+  justify-content: center;
+}
+
 /* Titres et autres balises texte */
-.h1{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 2em; 
-  font-weight: bold; 
-  text-align: center; 
-  color: red; 
+.h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  color: red;
+  line-height: 1em;
+}
+
+.h2 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  color: red;
+  line-height: 1em;
 }
