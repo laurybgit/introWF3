@@ -1,0 +1,42 @@
+.square{
+  height: 500px; 
+  width: 500px; 
+  background-color: green; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.square2{
+  height:500px; 
+  width: 500px; 
+  background-color: blue; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.losange{
+    height: 30px;
+    width: 30px;
+    background: red;
+    -ms-transform: rotate(45deg); /* Internet Explorer */
+    -moz-transform: rotate(45deg); /* Firefox */
+    -webkit-transform: rotate(45deg); /* Safari et Chrome */
+    -o-transform: rotate(45deg); /* Opera */
+}
+
+.square.losange 
+{
+  background-color: purple; 
+}
+
+.square .losange 
+{
+  background-color: orangered; 
+}
+
+.square > .losange 
+{
+background-color: grey; 
+}
