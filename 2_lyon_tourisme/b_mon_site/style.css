@@ -37,15 +37,15 @@ nav ul li {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 1em;
-  padding: 10px;
-  margin: 10px;
+  padding: 10px; 
+  margin: 10px; 
   text-align: center;
 }
 
 nav a {
   text-decoration: none;
   color: rgb(12, 12, 151);
-  padding: 10px 0px;
+  /* padding: 10px 0px; */
 }
 
 nav a:hover {
@@ -53,10 +53,11 @@ nav a:hover {
 }
 
 .sous {
-  text-align: left;
+  text-align: center;
   display: none;
   background-color: white;
   position: absolute;
+  left: 40%;
 }
 nav > ul li:hover .sous {
   display: block;
@@ -96,9 +97,13 @@ nav > ul li:hover .sous {
 }
 
 .l-footer {
+  display: flex; 
+  justify-content: center; 
   box-sizing: border-box;
   padding: 25px;
-  background-color: yellow;
+  color: black; 
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.7rem; 
 }
 
 /* Image fix */
